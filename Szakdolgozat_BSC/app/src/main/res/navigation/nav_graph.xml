@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/massageBoardActivity">
+
+
+    <activity
+        android:id="@+id/massageBoardActivity"
+        android:name="com.example.szakdoga.massageBoard.MassageBoardActivity"
+        android:label="post_main_activity"
+        tools:layout="@layout/post_main_activity">
+
+
+
+
+    </activity>
+
+    <fragment
+        android:id="@+id/AddPostFragment"
+        android:name="com.example.szakdoga.massageBoard.AddPostFragment"
+        android:label="add_post_fragmnent"
+        tools:layout="@layout/pop_up_add_post">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/OpenPostFragment"
+        android:name="com.example.szakdoga.massageBoard.OpenPostFragment"
+        android:label="opem_post_fragment"
+        tools:layout="@layout/post_detail_opend">
+
+    </fragment>
+
+    <action
+        android:id="@+id/action_mba_to_openPostFragment"
+        app:destination="@id/OpenPostFragment" />
+
+    <action
+        android:id="@+id/action_mba_to_addPostFragment"
+        app:destination="@id/AddPostFragment" />
+
+
+
+</navigation>

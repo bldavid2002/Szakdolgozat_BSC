@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Háttér téglalap (átlátszó) -->
+    <item>
+        <shape>
+            <solid android:color="#00000000" /> <!-- Átlátszó háttér -->
+        </shape>
+    </item>
+
+    <!-- Keret téglalap -->
+    <item android:right="4dp" android:left="4dp" android:top="4dp" android:bottom="4dp">
+        <shape>
+            <solid android:color="#00000000" /> <!-- Átlátszó keret -->
+            <stroke
+                android:width="2dp"/> <!-- Keret vastagsága -->
+            android:color="#FF0000" /> <!-- Keret színe itt állítható be -->
+            <corners android:radius="4dp" /> <!-- Keret sarok lekerekítése itt állítható be -->
+        </shape>
+    </item>
+
+    <!-- Pontozott vonalak a keret körül -->
+    <item android:right="4dp" android:left="4dp" android:top="4dp" android:bottom="4dp">
+        <shape>
+            <stroke
+                android:width="1dp" /> <!-- Vonal vastagsága -->
+                android:color="#FF0000" /> <!-- Vonal színe -->
+            <size android:height="8dp" /> <!-- Vonal szakaszok hossza -->
+            <dash android:dashWidth="4dp" android:dashGap="4dp" /> <!-- Pontozott vonalak beállítása -->
+        </shape>
+    </item>
+</layer-list>

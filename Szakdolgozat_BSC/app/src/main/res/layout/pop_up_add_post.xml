@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MassageBoard.MassageBoardFragment"
+   >
+    <FrameLayout
+        android:id="@+id/popup_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="451dp"
+            android:layout_gravity="center"
+            android:background="#872727"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/imga_select_view"
+                android:layout_width="wrap_content"
+                android:layout_height="260dp"
+                android:layout_below="@+id/poup_description"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/image_select_border"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/popup_user_image"
+                android:layout_width="49dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:layout_marginStart="361dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/popup_title"
+                android:layout_width="363dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="1dp"
+                android:ems="10"
+                android:hint="Cím"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/poup_description"
+                android:layout_width="408dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_title"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="Leírás"
+                android:inputType="text"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <ImageView
+                android:id="@+id/add_Post"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/poup_description"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="274dp"
+                android:layout_marginEnd="187dp"
+                android:layout_weight="0"
+                android:contextClickable="true"
+
+                android:onClick="addMessagge"
+                app:srcCompat="@drawable/baseline_create_24" />
+
+            <TextView
+                android:id="@+id/imgae_select"
+                android:layout_width="209dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/poup_description"
+                android:layout_alignBottom="@+id/selectedImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="113dp"
+                android:layout_marginEnd="106dp"
+                android:layout_marginBottom="109dp"
+                android:gravity="center"
+                android:textSize="20dp"
+
+                android:text="Válassz Egy Képet" />
+
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_below="@+id/poup_description"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

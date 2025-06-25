@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_video"
+        android:icon="@drawable/round_ondemand_video_24"
+        android:title="Video"/>
+
+    <item
+        android:id="@+id/navigation_playlist"
+        android:icon="@drawable/round_playlist_icon"
+        android:title="Playlist"/>
+
+
+    <item
+        android:id="@+id/navigation_channel"
+        android:icon="@drawable/round_information_icon"
+        android:title="Information about channel"/>
+</menu>
